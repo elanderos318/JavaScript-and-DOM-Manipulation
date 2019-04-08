@@ -32,6 +32,10 @@ var countryField = d3.select("#country");
 var shapeBox = d3.select(".shape-box");
 var shapeField = d3.select("#shape");
 
+
+// Create event listener for button click
+filterButton.on("click", buttonClick);
+
 // Display data on loading the page
 appendTable(tableData);
 
